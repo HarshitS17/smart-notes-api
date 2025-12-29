@@ -3,8 +3,9 @@
 
 📝 Smart Notes API
 
-A full-stack Smart Notes application built using Spring Boot (REST API) with a MySQL database and a minimal HTML/CSS/JavaScript frontend.
-Users can create, read, update, delete, and search notes in real time.
+Smart Notes is a full-stack note-taking application that allows users to
+create, edit, delete, and search notes. It exposes a REST API built with
+Spring Boot and persists data using MySQL.
 
 ⸻
 
