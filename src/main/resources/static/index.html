@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Smart Notes</title>
+
+    <!-- Force CSS reload (Safari cache fix) -->
+    <link rel="stylesheet" href="/style.css?v=3" />
+</head>
+
+<body>
+<div class="app">
+
+    <h1>📝 Smart Notes</h1>
+
+    <!-- FORM CARD -->
+    <div class="card form-card">
+
+        <label for="title">Title</label>
+        <input
+                id="title"
+                type="text"
+                placeholder="Enter note title"
+        />
+
+        <label for="content">Content</label>
+        <textarea
+                id="content"
+                placeholder="Write your note..."
+        ></textarea>
+
+        <div class="actions">
+            <button class="primary" onclick="addNote()">Add Note</button>
+            <button class="secondary" onclick="clearForm()">Clear</button>
+        </div>
+
+        <label for="search">Search</label>
+        <input
+                id="search"
+                type="text"
+                placeholder="Search notes..."
+                oninput="searchNotes()"
+        />
+
+    </div>
+
+    <!-- NOTES LIST -->
+    <div id="notes" class="notes"></div>
+
+</div>
+
+<!-- Force JS reload -->
+<script src="/script.js?v=3"></script>
+</body>
+</html>

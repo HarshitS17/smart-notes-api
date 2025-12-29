@@ -1,0 +1,152 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #2e2e30;
+    color: #eaeaea;
+}
+
+/* APP CONTAINER */
+.app {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #3a3a3d;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* HEADER */
+h1 {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.app h1 {
+    text-align: center;
+}
+
+/* FORM CARD */
+.form-card {
+    background: #444447;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+/* LABELS */
+label {
+    display: block;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    color: #cfcfcf;
+}
+
+/* INPUTS */
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #2f2f31;
+    color: #ffffff;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9b9b9b;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* ACTION BUTTONS */
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button.primary {
+    background: #5b8cff;
+    color: white;
+}
+
+button.secondary {
+    background: #6a6a6a;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* SEARCH */
+#search {
+    margin-top: 14px;
+}
+
+/* NOTES GRID */
+.notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+/* NOTE CARD */
+.note {
+    background: #454548;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.note h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+}
+
+.note p {
+    font-size: 14px;
+    color: #d0d0d0;
+}
+
+/* NOTE ACTIONS */
+.note-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.note button {
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+.note .edit {
+    background: #facc15;
+    color: #000;
+}
+
+.note .delete {
+    background: #ef4444;
+    color: white;
+}
