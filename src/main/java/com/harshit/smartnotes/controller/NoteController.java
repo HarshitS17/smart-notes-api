@@ -3,7 +3,6 @@ package com.harshit.smartnotes.controller;
 import com.harshit.smartnotes.model.Note;
 import com.harshit.smartnotes.service.NoteService;
 
-import org.aspectj.weaver.ast.Not;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
